@@ -1,0 +1,33 @@
+.cursor {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $white;
+  mix-blend-mode: difference;
+
+  transform: translate(-500%, -500%);
+  z-index: 1000;
+
+  &.image__active {
+    border: none;
+    mix-blend-mode: normal;
+  }
+
+  .cursor__img {
+    height: 300px;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+  }
+}
+.cursor__link {
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: difference;
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 95%;
+  max-width: 1640px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__small {
+    max-width: 1340px;
+  }
+}
+
+.project__list {
+  position: relative;
+  max-width: 975px;
+  margin-left: auto;
+}
